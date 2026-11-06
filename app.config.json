@@ -1,0 +1,71 @@
+{
+  "$schema": "./.dt-app/app.config.schema.json",
+  "environmentUrl": "https://your-environment-id.apps.dynatrace.com/",
+  "app": {
+    "name": "License Consumption Explorer",
+    "version": "0.12.50",
+    "description": "Which hosts, namespaces and apps consume DPS licence",
+    "id": "my.license.consumption.explorer",
+    "scopes": [
+      {
+        "name": "storage:system:read",
+        "comment": "read billing usage events from dt.system.events"
+      },
+      {
+        "name": "storage:buckets:read",
+        "comment": "read the bucket holding dt.system.events"
+      },
+      {
+        "name": "storage:entities:read",
+        "comment": "resolve host, Kubernetes, application, monitor and service names with bulk lookups. Without it rows show bare entity IDs"
+      },
+      {
+        "name": "storage:smartscape:read",
+        "comment": "resolve host, Kubernetes and application names on environments that have Smartscape instead of the classic entity tables"
+      },
+      {
+        "name": "state:user-app-states:read",
+        "comment": "read your own saved settings: rate-card overrides, commitment, allowances, ownership rules, team budgets and, if connected, the Account Management connection"
+      },
+      {
+        "name": "state:user-app-states:write",
+        "comment": "save those settings for your user only, only when you choose Save. Includes the Account Management client ID and secret if you save a connection"
+      }
+    ],
+    "icon": "design/icon/license-consumption-icon-v2.svg",
+    "uiCommands": {
+      "categories": [
+        {
+          "id": "navigate",
+          "name": "License Consumption Explorer",
+          "commands": [
+            {
+              "id": "go-home",
+              "description": "Go to Home: press g, then h"
+            },
+            {
+              "id": "go-overview",
+              "description": "Go to the Overview: press g, then o"
+            },
+            {
+              "id": "go-entities",
+              "description": "Go to Entities: press g, then e"
+            },
+            {
+              "id": "go-spend",
+              "description": "Go to Spend: press g, then s"
+            },
+            {
+              "id": "go-fixes",
+              "description": "Go to Findings: press g, then f"
+            },
+            {
+              "id": "search",
+              "description": "Search the list on this screen: press /"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,48 @@
+# DT APP files
+.dt-app/*
+!/.dt-app/deployment.json
+
+# Compiled output
+/dist
+/build
+/tmp
+
+# Deployment artifact
+/out
+
+# Dependencies
+/node_modules
+
+# IDEs and editors
+/.idea
+*.iml
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+.history/
+
+# IDE - VSCode
+/.vscode/*
+!/.vscode/settings.json
+!/.vscode/tasks.json
+!/.vscode/launch.json
+!/.vscode/extensions.json
+
+# System Files
+.DS_Store
+Thumbs.db
+
+# app-settings plugin local files
+/settings/local-mock-data/secrets.json
+/settings/local-mock-data/persistence/
+
+# Test bundle (rebuilt by npm test)
+/tests/.build
+# Distributable app packages (npm run package)
+/out
+# Local screenshots from verification runs (large; regenerate with scripts/verify-v0.10.mjs)
+/screenshots
+.DS_Store
