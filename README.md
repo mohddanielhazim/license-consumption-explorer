@@ -2,7 +2,7 @@
 
 A custom Dynatrace app that shows where your Dynatrace Platform Subscription goes: which hosts, Kubernetes namespaces, applications, synthetic monitors, buckets and workflows consume it, how much of it can be charged back to teams, and what is worth reviewing to spend less. It reads your environment's own billing records and changes nothing in Dynatrace.
 
-Built by **Mohd Daniel Hazim Amran**. Not an official Dynatrace product; questions and feedback go to the author.
+Built by **Mohd Daniel Hazim Amran**. Not an official Dynatrace product; questions and feedback go to the author. Developed with the help of Claude Code.
 
 **Version:** see `app.config.json`. Features marked "Preview" on screen (the Account Management connection, Reconcile, the commitment burn line and usage against plan) are newer and optional; everything else is the core of the app.
 
